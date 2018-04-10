@@ -1,16 +1,16 @@
 # Semaine intensive WEB/3D
 
-## Projet breathink 
+## Projet breathink 🚬
 Nous avons réalisé un site e-commerce de cigarettes  éléctroniques en intregrant un configurateur de modelisation 3D.
 
 Fonctionnalités du site :
 
-[] Fil d'ariane
-[] Panier
-[] Espace de connexion
-[] Mise en avant des produits (prix, descriptions etc...)
-[] Avis des utilisateurs
-[] Modélisation 3D
+1.[] Fil d'ariane
+2.[] Panier
+3.[] Espace de connexion
+4.[] Mise en avant des produits (prix, descriptions etc...)
+5.[] Avis des utilisateurs
+6.[] Modélisation 3D
 
 
 ## SiteMap
