@@ -1,0 +1,22 @@
+.citeSection{
+  background: #4A4B4A;
+  margin: 200px 0;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .citeTitle{
+    font-size: 4.2rem;
+    color: #50E3C2;
+  }
+  .citeText{
+    padding: 2%;
+    font-size: 2.6rem;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-weight: 300;
+    width: 68%;
+  }
+}
