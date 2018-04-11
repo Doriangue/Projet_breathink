@@ -29,7 +29,13 @@ require_once "../Fonctions_php/connexion.php";
 
         <!-- Fill the fields with values returned in $row */ -->
         <div style="margin-left: 20px;">
+            <img src="" alt="">
             <h1 style="margin-bottom: 10px;" ><?=$element['nom']?></h1>
+            <p><?=$element['description']?></p>
+            <img src="" alt="">
+            <p><?$=element['prix']?></p>
+            <input type="text" name="" value="Supprimer">
+            <input type="text" name="" value="Payer">
         </div>
     <?php } ?>
 </div>
