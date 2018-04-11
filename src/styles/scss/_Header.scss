@@ -2,7 +2,6 @@
   height: 130px;
   width: 100%;
   box-shadow: 0 -8px 36px 0 rgba(0,0,0,0.50);
-
   display: flex;
   align-items: center;
 }
@@ -22,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 2.1rem;
+    font-weight: 300;
     color: #212121;
     .navItems{
       cursor: pointer;
@@ -33,7 +33,8 @@
       cursor: pointer;
     }
     .navBurgerMenu{
-      width: 16%;
+      cursor: pointer;
+      width: 13.4%;
       background: #4A4B4A;
       height: 223px;
       flex-direction: column;
@@ -42,20 +43,6 @@
       text-align: center;
       padding-top: 50px;
     }
-
-    .navBurgerMenu-after{
-      position: absolute;
-      cursor: pointer;
-      width: 9.9%;
-      background: #4A4B4A;
-      height: 0px;
-      right: 6.2%;
-      margin-top: 243px;
-      transition: 0.4s;
-      overflow: hidden;
-      max-height: 213px;
-    }
-
     .navBurgerLine{
       padding: 62px 0 45px 0;
       height: 100%;
@@ -67,13 +54,10 @@
         height: 100%;
         width: 1px;
         background: #fff;
-
       }
       .middle{
         height: 80%;
         transition: 0.2s ease;
-        position: absolute;
-        z-index: 2;
       }
     }
     .navBurgerLine:hover{
@@ -87,9 +71,17 @@
       padding-bottom: 32px;
     }
   }
-}
-.navBurgerMenu-nav{
-  text-align: center;
-  color: white;
-  margin-top: 35px;
+  .navBurgerMenu-after{
+    width: 9.9%;
+    background: #4A4B4A;
+    height: 0px;
+    flex-direction: column;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 242px;
+    right: 6.2%;
+    position: absolute;
+    transition: 0.2s;
+  }
 }
