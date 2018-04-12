@@ -61,4 +61,3 @@ include_once 'includes/packs.php';
 include_once 'includes/recommandation.php';
 include_once 'includes/footer.php';
 ?>
-

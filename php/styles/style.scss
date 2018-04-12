@@ -5,6 +5,7 @@ html {
 
 body{
   font-family: Copperplate, sans-serif;
+
 }
 
 a{
@@ -172,7 +173,7 @@ a{
     font-size: 1.4rem;
     font-weight: 100;
   }
-  
+
   &-priceContent{
     font-size: 2.6rem;
     color: #50E3C2;
@@ -385,10 +386,6 @@ a{
 }
 
 
-
-
-
-
 .packs{
   &Item{
     border: 1px solid #969696;
@@ -399,6 +396,9 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  &Item:hover {
+    background-color: #4A4B4A;
   }
 
   &ItemTitle{
@@ -418,6 +418,7 @@ a{
     color: black;
   }
 }
+
 .personalized{
   transition: 0.2s ease;
 }
@@ -699,6 +700,3 @@ a{
     line-height: 25px;
   }
 }
-
-
-
