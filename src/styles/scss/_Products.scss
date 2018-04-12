@@ -9,6 +9,7 @@
     width: 300px;
     margin: 0 80px;
   }
+<<<<<<< HEAD
   &ItemImg{
     height:430px;
     width: 500px;
@@ -96,3 +97,55 @@
     color: white;
     margin-bottom: 35px;
   }
+=======
+&ItemImg{
+  height:430px;
+  width: 500px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-color: white;
+  padding: 2%;
+}
+&ImgContainer{
+  display: flex;
+}
+&Stars{
+  width: 300px;
+  height: 300px;
+}
+&ItemImg:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ }
+ &Item{
+   padding: 10% 0;
+   display: flex;
+   margin: 0 auto;
+   width: 90%;
+ }
+ &ItemDesc{
+   height: 300px;
+   background-color: #4A4B4A;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+   margin-top: 33px;
+   margin-left: -70px;
+   padding: 2%;
+   width: 80%;
+ }
+ &ItemPrice{
+   font-size: 3rem;
+   color: #50E2C1;
+ }
+ &ItemText-low{
+   color: white;
+   width: 75%;
+ }
+ &ItemText-high{
+   color: white;
+   font-size: 1.5rem;
+ }
+ &ItemButton{
+   text-align: center;
+   margin: 0 auto;
+ }
+}
+>>>>>>> 5c68e5f4c1426cd60b9f6cf703a3769f81c74057

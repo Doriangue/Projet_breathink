@@ -20,6 +20,11 @@
                 <div class="navShoppingBag">
                     <img src="./assets/imgs/shopping-bag.svg" alt="" class="shoppingBagImg">
                 </div>
+                <div class="modalShoppingBag">
+                    <div class="modalShoppingBag-content">
+
+                    </div>
+                </div>
 
                 <div class="navBurgerMenu">
                     <div class="navBurgerLine">
@@ -35,21 +40,68 @@
 
     </header>
 
-    <section class="promo">
-        <div class="login">
-            <img src="assets/imgs/login.svg" alt="" class="loginImg">
-            <p class="loginText">Login</p>
+<section class="promo">
+
+    <div class="login">
+        <img src="assets/imgs/login.svg" alt="" class="loginImg">
+        <p class="loginText">Login</p>
+    </div>
+
+    <div class="modalLogin">
+        <div class="modalLogin-contentLeft">
+            <div class="loginBtn">S’inscrire</div>
+            <p class="loginSubText">Smo’tech - inscrivez-vous,
+                commandez votre pack et le tour
+                est joué !</p>
         </div>
-    </section>
-    <section class="packs">
-      <div class="packsContainer">
+        <div class="modalLogin-contentRight">
+            <div class="headTitleRight">
+                <p class="loginText">Login</p>
+                <img src="./assets/imgs/cross.svg" alt="" class="crossImg">
+            </div>
+
+            <form action="" class="headFormRight">
+                <label class="loginLabel">mail</label>
+                <input type="email" class="loginInput">
+                <label class="loginLabel">mot de passe</label>
+                <input type="password" class="loginInput">
+
+                <button type="submit" class="loginBtn">
+                    <p>confirmer</p>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <article class="articleContainer">
+        <div class="article">
+            <div class="articleTitle">Cigarette Electronique</div>
+            <div class="articleText"> La cigarette électronique est un appareil capable de vaporiser du eliquide arômatisé nicotiné ou non destiné à être inhalé. Ce dispositif produit une vapeur ressemblant visuellement à la fumée produite par la combustion du tabac.</div>
+        </div>
+        <div class="middlerec"></div>
+        <div class="articleImg">
+            <img src="assets/imgs/imgSection.jpg" alt="">
+        </div>
+    </article>
+
+</section>
+
+
+<section class="citeSection">
+    <div class="citeTitle">Smo’tech</div>
+    <div class="citeText">Une maison de vente pour cigarette éléctronique pour les clients débutant / intermédiaire et aussi pour les experts.</div>
+</section>
+
+<section class="packs">
+    <div class="packsContainer">
         <a href="#">
-        <div class="packsItem personalized">
-          <h1 class="packsItemTitle personalizedTitle">Pack personnalisable</h1>
-          <p class="packsItemDesc">Pour les plus créatifs.</p>
-          <p class="packsItemPrice"></p>
-        </div>
+            <div class="packsItem personalized">
+                <h1 class="packsItemTitle personalizedTitle">Pack personnalisable</h1>
+                <p class="packsItemDesc">Pour les plus créatifs.</p>
+                <p class="packsItemPrice"></p>
+            </div>
         </a>
+<<<<<<< HEAD
         <a href="packsN.html">
         <div class="packsItem novice">
           <h1 class="packsItemTitle">Pack débutant</h1>
@@ -70,9 +122,31 @@
           <p class="packsItemDesc">Pour les puristes et experts.</p>
           <p class="packsItemPrice">89 €</p>
         </div>
+=======
+        <a href="#">
+            <div class="packsItem novice">
+                <h1 class="packsItemTitle">Pack débutant</h1>
+                <p class="packsItemDesc">Rien de mieux pour un début</p>
+                <p class="packsItemPrice">29 €</p>
+            </div>
         </a>
-      </div>
-    </section>
+        <a href="#">
+            <div class="packsItem medium">
+                <h1 class="packsItemTitle">Pack Intermédiaire</h1>
+                <p class="packsItemDesc">Pour les fumeurs régulier.</p>
+                <p class="packsItemPrice">49 €</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="packsItem expert">
+                <h1 class="packsItemTitle">Pack Avancé</h1>
+                <p class="packsItemDesc">Pour les puristes et experts.</p>
+                <p class="packsItemPrice">89 €</p>
+            </div>
+>>>>>>> 5c68e5f4c1426cd60b9f6cf703a3769f81c74057
+        </a>
+    </div>
+</section>
 
 
 
@@ -97,6 +171,11 @@
         <p class="recommandationItemPrice">39 €</p>
         <div class="recommandationItemDot"></div>
       </div>
+<div class="recommandationItem">
+<img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
+<p class="recommandationItemPrice">19 €</p>
+<div class="recommandationItemDot"></div>
+</div>
 
     </div>
     </section>
@@ -127,5 +206,9 @@
     });
 
   </script>
+
+</div>
+</section>
+    <script src="js/ui.js"></script>
 </body>
 </html>

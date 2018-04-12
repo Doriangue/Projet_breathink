@@ -54,7 +54,6 @@
         height: 100%;
         width: 1px;
         background: #fff;
-
       }
       .middle{
         height: 80%;
@@ -72,4 +71,20 @@
       padding-bottom: 32px;
     }
   }
+<<<<<<< HEAD
+=======
+  .navBurgerMenu-after{
+    width: 9.9%;
+    background: #4A4B4A;
+    height: 0px;
+    flex-direction: column;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 242px;
+    right: 6.2%;
+    position: absolute;
+    transition: 0.2s;
+  }
+>>>>>>> 5c68e5f4c1426cd60b9f6cf703a3769f81c74057
 }
