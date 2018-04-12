@@ -1,0 +1,92 @@
+.novices{
+background-color: black;
+ &Flex{
+  display: flex;
+  }
+&Buy{
+  background-color: white;
+  height: 100vh;
+  width: 30%;
+  }
+ &BuyContent{
+   padding: 10% 7%;
+ }
+ &BuyPrice{
+   color: #50E2C1;
+   font-size: 3rem;
+   text-align: center;
+   padding-top: 15%;
+ }
+ &BuyText{
+   font-size: 1.5rem;
+   color: #000000;
+   padding: 20% 0 50% 0;
+   line-height: 25px;
+ }
+ &BuyBtn-block{
+   text-align: center;
+ }
+ &BuyBtn{
+   background: none;
+   font-size: 1.5rem;
+   padding: 1% 15%;
+   border-radius: 7px;
+   box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.1);
+   border: none;
+   outline: none;
+   transition: 0.8s;
+   cursor: pointer;
+ }
+ &BuyBtn:hover{
+   background-color: #4A4B4A;
+   color: #50E2C1;
+   transition: 0.8s;
+ }
+&Description{
+  height: 100vh;
+  width: 70%;
+  background-color: #4A4B4A;
+ }
+ &DescriptionSpan{
+   text-align: center;
+   color: white;
+   font-size: 1.5rem;
+   padding-bottom: 5%;
+   font-weight: bold;
+ }
+ &DescriptionSpan::before{
+   display: inline-block;
+   content: "";
+   border-top: .1rem solid white;
+   width: 8rem;
+   margin: 0 1.5rem 0 0;
+   transform: translateY(-0.5rem);
+ }
+ &DescriptionSpan::after{
+   display: inline-block;
+   content: "";
+   border-top: .1rem solid white;
+   width: 8rem;
+   margin: 0 1rem 0 1.5rem;
+   transform: translateY(-0.5rem);
+ }
+ &DescriptionFlex{
+   display: flex;
+ }
+ &DescriptionContent{
+   padding: 8% 7% 0 7%;
+ }
+ &Img{
+   width: 300px;
+   padding: 0 46px 53px 0;
+ }
+ &DescriptionCharacteristic{
+   color: white;
+   font-size: 1.5rem;
+ }
+ &DescriptionText{
+  color: white;
+  font-size: 1.5rem;
+  line-height: 25px;
+ }
+}
