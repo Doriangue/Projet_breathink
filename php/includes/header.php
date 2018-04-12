@@ -18,7 +18,7 @@
         <div class="navBar-right">
             <div class="navItems"><a href="products.php">produits</a></div>
             <div class="navItems">personnaliser</div>
-            <div class="navItems"><a href="#packs">packs</a></div>
+            <div class="navItems"><a class="goPacks" href="index.php#packs">packs</a></div>
             <div class="login">
                 <img src="./assets/imgs/login.svg" alt="" class="loginImg">
                 <p class="loginText"><?=$_SESSION['prenom']?></p>
