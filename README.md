@@ -5,17 +5,29 @@ Nous avons réalisé un site e-commerce de cigarettes  éléctroniques en intreg
 
 
 1. [ ] *Fonctionnalités du site :*
-    1. [ ] Fil d'ariane
-    2. [ ] Panier
-    3. [ ] Espace de connexion
-    4. [ ] Mise en avant des produits (prix, descriptions etc...)    
-    5. [ ] Avis des utilisateurs     
-    6. [ ] Modélisation 3D 
+    1. [ ] Panier
+    2. [x] Espace de connexion
+    3. [x] Mise en avant des produits (prix, descriptions etc...)    
+    4. [x] Avis des utilisateurs     
+    5. [x] Modélisation 3D 
 
 
 
 ## SiteMap
-...
+Comming soon
+
+
+
+##Our team
+
+* [Marie Te](https://github.com/mariete36)
+* [Eugénie Roques](https://github.com/eugenierqs)
+* [Enzo Hespel](https://github.com/Draktors)
+* [Nino Lamoureux](https://github.com/ninolam)
+* [Mickael De Jesus](https://github.com/Micka-dej)
+* [Dorian Gueguen](https://github.com/Doriangue)
+
+
 
 ## Marketing
 
