@@ -1,6 +1,6 @@
 <section id="packs" class="packs">
     <div class="packsContainer">
-        <a href="../add_Comment.php">
+        <a href="add_Comment.php">
             <div class="packsItem personalized">
                 <h1 class="packsItemTitle personalizedTitle">Pack personnalisable</h1>
                 <p class="packsItemDesc">Pour les plus créatifs.</p>

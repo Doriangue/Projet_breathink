@@ -13,15 +13,15 @@
 <header class="header">
     <nav class="navBar">
         <div class="navBar-left">
-            <a href="index.php"><img src="./assets/imgs/navLogo.svg" alt="" class="navLogo"></a>
+            <a href="login.php"><img src="./assets/imgs/navLogo.svg" alt="" class="navLogo"></a>
         </div>
         <div class="navBar-right">
             <div class="navItems"><a href="products.php">produits</a></div>
             <div class="navItems">personnaliser</div>
-            <div class="navItems"><a class="goPacks" href="index.php#packs">packs</a></div>
+            <div class="navItems"><a class="goPacks" href="login.php#packs">packs</a></div>
             <div class="login">
                 <img src="./assets/imgs/login.svg" alt="" class="loginImg">
-                <p class="loginText"><?=$_SESSION['prenom']?></p>
+                <p class="loginText"> mon compte</p>
             </div>
             <div class="navShoppingBag">
                 <img src="./assets/imgs/shopping-bag.svg" alt="" class="shoppingBagImg">

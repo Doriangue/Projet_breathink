@@ -3,7 +3,7 @@ session_start();
 require_once 'connexion.php';
 include 'includes/header.php';
 if (!isset($_SESSION['prenom'])){
-    header('Location:login.php?error=Dfghj');
+    header('Location:index.php?error=Erreurdeconnexion');
 }
 $requete = "SELECT
   `id`, 
@@ -19,7 +19,8 @@ $stmt = $conn->prepare($requete);
 $stmt->execute();
 ?>
 
-    <h1 class="perso-titre" style="color: #50E2C1; font-size: 3.2rem; text-align: center; padding-top:30px">Personnalisation</h1>
+
+    <h1 class="perso-titre" style="color: #50E2C1; font-size: 3.2rem; text-align: center; padding-top:30px">Personnalisation de <?=$_SESSION['prenom']?></h1>
     <div class="webgl-content" style="display: flex; justify-content: center; margin-top: 25px">
         <div id="gameContainer" style="width: 1024px; height: 576px"></div>
 

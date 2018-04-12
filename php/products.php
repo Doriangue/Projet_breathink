@@ -1,6 +1,5 @@
 <?php
 include_once 'includes/header.php';
-include_once 'includes/panier.php';
 require_once 'connexion.php';
 session_start();
 $requete = "SELECT
@@ -11,12 +10,18 @@ $requete = "SELECT
 FROM 
   `cart`
   WHERE
-  `id`
-  BETWEEN  15 AND 17
+  `id` = 15
 ;";
 $stmt = $conn->prepare($requete);
 $stmt->execute();
 ?>
+
+
+    <section class="promo">
+    <div class="login">
+        <p class="loginText">hi, <?=$_SESSION['prenom']?></p>
+    </div>
+    </section>
 
     <section class="products">
 <?php while (false !== $row = $stmt -> fetch(PDO::FETCH_ASSOC)):?>
@@ -40,9 +45,7 @@ $stmt->execute();
             <p class="productsItemText-low">Gecko est un concentré de performance et de design concentré dans un micro setup de moins de 10 cm.</p>
         </div>
         <div class="productsItemButton">
-            <form method="post" action="add_panier.php">
                 <button class="productsItemAdd" type="submit" name="button">Ajouter aux panier</button>
-            </form>
         </div>
     </div>
 <?php endwhile; ?>
