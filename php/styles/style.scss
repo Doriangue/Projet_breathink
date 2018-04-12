@@ -5,6 +5,7 @@ html {
 
 body{
   font-family: Copperplate, sans-serif;
+
 }
 
 a{
@@ -340,10 +341,6 @@ a{
 }
 
 
-
-
-
-
 .packs{
   &Item{
     border: 1px solid #969696;
@@ -354,6 +351,9 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  &Item:hover {
+    background-color: #4A4B4A;
   }
 
   &ItemTitle{
@@ -373,6 +373,7 @@ a{
     color: black;
   }
 }
+
 .personalized{
   transition: 0.2s ease;
 }
@@ -654,15 +655,3 @@ a{
     line-height: 25px;
   }
 }
-
-
-
-.modelisation{
-  .modelisationTitle{
-    font-size:4.6rem;
-    color: #50E3C2;
-    text-align: center;
-  }
-}
-
-

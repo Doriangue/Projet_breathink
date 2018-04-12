@@ -38,36 +38,18 @@ a {
       color: #50e3c2; }
     .navBar-right .navShoppingBag {
       cursor: pointer; }
-    .navBar-right .navBurgerMenu {
-      cursor: pointer;
-      width: 13.4%;
-      background: #4A4B4A;
-      height: 223px;
-      flex-direction: column;
-      overflow: auto;
-      display: flex;
-      text-align: center;
-      padding-top: 50px; }
-    .navBar-right .navBurgerLine {
-      padding: 62px 0 45px 0;
-      height: 100%;
-      width: 60%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-around; }
-      .navBar-right .navBurgerLine-item {
-        height: 100%;
-        width: 1px;
-        background: #fff; }
-      .navBar-right .navBurgerLine .middle {
-        height: 80%;
-        transition: 0.2s ease; }
-    .navBar-right .navBurgerLine:hover .middle {
-      height: 100%; }
-    .navBar-right .navBurgerText {
-      font-size: 2rem;
-      color: #fff;
-      padding-bottom: 32px; }
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  cursor: pointer; }
+
+.loginText {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #9B9B9B; }
 
 .modalShoppingBag {
   display: none;
@@ -91,11 +73,9 @@ a {
     justify-content: center;
     flex-direction: column;
     color: #4A4B4A;
-    position: relative;
-  }
+    position: relative; }
   .modalShoppingBag .crossImg {
     position: absolute;
-    cursor: pointer;
     top: 10px;
     right: 10px; }
   .modalShoppingBag-product {
@@ -152,22 +132,13 @@ a {
   width: 83%;
   margin: 0 auto;
   padding: 53px 0 0; }
-  .promo .login {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 8%;
-    cursor: pointer; }
-  .promo .loginText {
-    font-size: 2.1rem;
-    font-weight: 300;
-    color: #9B9B9B; }
 
 .articleContainer {
+  top: -70px;
   position: relative; }
   .articleContainer .article {
     width: 41%;
-    height: 400px;
+    height: 350px;
     box-shadow: 0 -6px 40px 0 rgba(192, 192, 192, 0.5);
     text-align: center;
     font-weight: 300;
@@ -310,6 +281,11 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+  .packsItem:hover {
+    background-color: #4A4B4A;
+  }
+
 .packsItemTitle {
   font-size: 2rem;
   color: black; }
@@ -348,7 +324,16 @@ a {
     padding-bottom: 80px; }
   .recommandationItemImg {
     width: 179px;
-    height: 179px; }
+    height: 179px;
+  cursor: pointer;}
+
+    .recommandationItemImg:hover {
+      transition: all 1s ease-out;
+      -moz-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+
   .recommandationItemPrice {
     font-size: 2.1rem;
     padding-bottom: 10%; }
@@ -437,6 +422,11 @@ a {
     font-size: 1.4rem;
     margin-top: 5%;
     line-height: 28px; }
+    .productStars {
+      height: 13px;
+      width: 13px;
+      margin-top: 2px;
+    }
   .productsLink {
     text-decoration: underline;
     color: #50E2C1;
@@ -444,7 +434,7 @@ a {
     padding-left: 5%; }
   .productsItemText-high {
     color: white;
-    font-size: 1.8rem; }
+    font-size: 1.9rem; }
   .productsItemButton {
     text-align: center;
     margin: 50px auto 0; }
@@ -452,6 +442,9 @@ a {
     border-radius: 8px;
     background-color: white;
     border: none;
+    font-family: copperplate;
+    cursor: pointer;
+font-weight: 200;
     padding: 5px 45px;
     font-size: 1.8rem;
     outline: none; }
@@ -546,5 +539,10 @@ a {
     color: white;
     font-size: 1.5rem;
     line-height: 25px; }
+
+.modelisation .modelisationTitle {
+  font-size: 4.6rem;
+  color: #50E3C2;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
