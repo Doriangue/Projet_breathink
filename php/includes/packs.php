@@ -1,4 +1,4 @@
-<section class="packs">
+<section id="packs" class="packs">
     <div class="packsContainer">
         <a href="../add_Comment.php">
             <div class="packsItem personalized">

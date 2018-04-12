@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="Build/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/LOURD.json", {onProgress: UnityProgress});
-    </script>
 
     <title>Smok'Tech</title>
 </head>
@@ -23,7 +18,11 @@
         <div class="navBar-right">
             <div class="navItems"><a href="products.php">produits</a></div>
             <div class="navItems">personnaliser</div>
-            <div class="navItems">packs</div>
+            <div class="navItems"><a href="#packs">packs</a></div>
+            <div class="login">
+                <img src="./assets/imgs/login.svg" alt="" class="loginImg">
+                <p class="loginText"><?=$_SESSION['prenom']?></p>
+            </div>
             <div class="navShoppingBag">
                 <img src="./assets/imgs/shopping-bag.svg" alt="" class="shoppingBagImg">
             </div>
@@ -70,15 +69,6 @@
                     </div>
                     <p class="totalPrice">TOTAL : 168 €</p>
                 </div>
-            </div>
-
-            <div class="navBurgerMenu">
-                <div class="navBurgerLine">
-                    <div class="navBurgerLine-item"></div>
-                    <div class="navBurgerLine-item middle"></div>
-                    <div class="navBurgerLine-item"></div>
-                </div>
-                <p class="navBurgerText">menu</p>
             </div>
 
         </div>
