@@ -1,8 +1,8 @@
 <?php
-$username = 'root';
-$password = 'root';
+$username = 'breathink';
+$password = 'breathink';
 try {
-    $conn = new PDO('mysql:host=127.0.0.1;dbname=Smo\'tech',$username, $password);
+    $conn = new PDO('mysql:host=127.0.0.1;dbname=breathink',$username, $password);
 } catch (PDOException $exception) {
     die($exception -> getMessage());
 }
