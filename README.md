@@ -20,12 +20,12 @@ Comming soon
 
 ##Our team
 
-* [Marie Te] (https://github.com/mariete36)
-* [Eugénie Roques] (https://github.com/eugenierqs)
-* [Enzo Hespel] (https://github.com/Draktors)
-* [Nino Lamoureux] (https://github.com/ninolam)
-* [Mickael De Jesus] (https://github.com/Micka-dej)
-* [Dorian Gueguen] (https://github.com/Doriangue)
+* [Marie Te](https://github.com/mariete36)
+* [Eugénie Roques](https://github.com/eugenierqs)
+* [Enzo Hespel](https://github.com/Draktors)
+* [Nino Lamoureux](https://github.com/ninolam)
+* [Mickael De Jesus](https://github.com/Micka-dej)
+* [Dorian Gueguen](https://github.com/Doriangue)
 
 
 
