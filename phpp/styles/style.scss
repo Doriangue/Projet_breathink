@@ -1,0 +1,704 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+
+body{
+  font-family: Copperplate, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  height: 130px;
+  width: 100%;
+  box-shadow: 0 -8px 36px 0 rgba(0,0,0,0.50);
+  display: flex;
+  align-items: center;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  width: 87.5%;
+  margin: 0 auto;
+  &-left{
+    display: flex;
+    align-items: center;
+  }
+  &-right{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: #212121;
+    .navItems{
+      cursor: pointer;
+    }
+    .navItems:hover{
+      color: #50e3c2;
+    }
+    .navShoppingBag{
+      cursor: pointer;
+    }
+    .navBurgerMenu{
+      cursor: pointer;
+      width: 13.4%;
+      background: #4A4B4A;
+      height: 223px;
+      flex-direction: column;
+      overflow: auto;
+      display: flex;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .navBurgerLine{
+      padding: 62px 0 45px 0;
+      height: 100%;
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      &-item{
+        height: 100%;
+        width: 1px;
+        background: #fff;
+
+      }
+      .middle{
+        height: 80%;
+        transition: 0.2s ease;
+      }
+    }
+    .navBurgerLine:hover{
+      .middle{
+        height: 100%;
+      }
+    }
+    .navBurgerText{
+      font-size: 2rem;
+      color: #fff;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+
+
+
+.modalShoppingBag{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  &-content{
+    background-color: #fff;
+    margin: 15% 0;
+    height: 40%;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #4A4B4A;
+    position: relative;
+  }
+  .crossImg{
+    position: absolute;
+    top:10px;
+    right:10px;
+  }
+  &-product{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 90%;
+  }
+  &-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+  &-left{
+    display: flex;
+    flex-direction: column;
+  }
+  &-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+  }
+  &-btn{
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-family: Copperplate,sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border: none;
+    cursor: pointer;
+  }
+  &-btn:focus{
+    outline: none;
+  }
+  &-btn:nth-child(2){
+    background: #000;
+    color: #fff;
+  }
+  &-sub{
+    display: flex;
+
+  }
+  .modalShoppingbag-title{
+    font-size: 2.6rem;
+  }
+  .modalShoppingbag-img{
+    height: 10px;
+
+  }
+  .modalShoppingBag-textContent{
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+  
+  &-priceContent{
+    font-size: 2.6rem;
+    color: #50E3C2;
+    width: 20%;
+  }
+  .totalPrice{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 2.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.promo{
+  width: 83%;
+  margin: 0 auto;
+  padding: 53px 0 0;
+  .login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 8%;
+    cursor: pointer ;
+  }
+  .loginText{
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: #9B9B9B;
+
+  }
+}
+
+.articleContainer{
+  position: relative;
+  .article{
+    width: 41%;
+    height: 400px;
+    box-shadow: 0 -6px 40px 0 rgba(192,192,192,0.50);
+    text-align: center;
+    font-weight: 300;
+    margin: 15% 0;
+    padding: 1%;
+    background: #fff;
+    &Title{
+      font-size: 3.2rem;
+      width: 50%;
+      margin: 0 auto;
+    }
+    &Text{
+      font-size: 1.8rem;
+      margin: 0 auto;
+      line-height: 2.8rem;
+      padding: 50px 0;
+      width: 95%;
+    }
+  }
+  .articleImg{
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    right: 0;
+  }
+}
+
+
+
+
+
+.modalLogin {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  &-contentLeft{
+    background-color: #4A4B4A;
+    margin: 15% 0;
+    height: 61%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #4A4B4A;
+
+    .loginBtn{
+      width: 46%;
+      height: 25px;
+      background: #50E3C2;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.1rem;
+      margin: 10% 0;
+      cursor: pointer;
+
+    }
+    .loginSubText{
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      text-align: center;
+      font-weight: 300;
+      color: #fff;
+      padding: 0 10% 10%;
+      width: 75%;
+    }
+  }
+  &-contentRight {
+    background-color: #fff;
+    margin: 15% 0;
+    height: 61%;
+    width: 37%;
+
+    .headTitleRight{
+      height: 10%;
+      width: 100%;
+      padding: 8.5% 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .loginText{
+        color: #4A4B4A;
+      }
+      .crossImg{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+    .headFormRight{
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      height: 60%;
+      margin: auto;
+      .loginInput{
+        border:none;
+        border-bottom: 1px solid #979797;
+        height: 10%;
+        margin: 8% 0;
+        font-size: 1.6rem;
+      }
+      .loginInput:focus {
+        outline:  none;
+      }
+      .loginLabel{
+        color: #50E3C2;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      .loginBtn{
+        box-shadow: 0 0 8px 0 rgba(192,192,192,0.50);
+        border-radius: 8px;
+        font-size: 2rem;
+        color: #4A4B4A;
+        width: 50%;
+        margin: 15% auto 0 auto;
+        text-align: center;
+        cursor: pointer;
+        font-family: Copperplate, sans-serif;
+      }
+    }
+
+  }
+}
+
+
+
+
+.citeSection{
+  background: #4A4B4A;
+  margin: 200px 0;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .citeTitle{
+    font-size: 4.2rem;
+    color: #50E3C2;
+  }
+  .citeText{
+    padding: 2%;
+    font-size: 2.6rem;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-weight: 300;
+    width: 68%;
+    font-family: "Bodoni 72 Oldstyle",sans-serif;
+  }
+}
+
+
+
+
+
+
+.packs{
+  &Item{
+    border: 1px solid #969696;
+    width: 50%;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &ItemTitle{
+    font-size: 2rem;
+    color: black;
+  }
+
+  &ItemDesc{
+    font-size: 1.5rem;
+    color:#8F928F;
+    padding: 1% 0;
+  }
+
+  &ItemPrice{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: black;
+  }
+}
+.personalized{
+  transition: 0.2s ease;
+}
+.personalized:hover{
+  background-color: #4A4B4A;
+}
+.personalizedTitle{
+  color: #50E2C1;
+}
+
+.recommandation{
+  padding: 10% 0;
+  &Container{
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &Item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &Text{
+    text-align: center;
+    font-size: 3.2rem;
+    padding-bottom: 80px;
+
+  }
+  &ItemImg{
+    width: 179px;
+    height: 179px;
+  }
+  &ItemPrice{
+    font-size: 2.1rem;
+    padding-bottom: 10% ;
+  }
+  &ItemDot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4A4B4A;
+  }
+}
+
+
+.footer{
+  background: #4A4B4A;
+  padding: 3% 0;
+  &Container{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    padding-right: 3%;
+    &-items{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .footerText{
+        font-size: 2.2rem;
+        padding: 2% 0;
+        color: #fff;
+        &-sub{
+          color: #50E2C1;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .footerCopyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    &-mention{
+      color: #fff;
+      font-size: 1.6rem;
+      padding: 2% 0;
+    }
+    &-text{
+      color: #50E2C1;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+.products{
+  padding-top: 5%;
+  &ItemTitle{
+    text-align: center;
+    font-size: 3rem;
+    font-weight:100;
+  }
+  &Img{
+    width: 300px;
+    margin: 0 80px;
+  }
+  &ItemImg{
+    height:430px;
+    width: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s ;
+    background-color: white;
+    padding: 2%;
+  }
+  &ImgContainer{
+    display: flex;
+  }
+  &ItemImg:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  &Item{
+    padding: 4% 0;
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &ItemDesc{
+    height: 300px;
+    background-color: #4A4B4A;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 63px;
+    margin-left: -70px;
+    padding: 2%;
+    width: 80%;
+  }
+  &ItemPrice{
+    font-size: 3rem;
+    color: #50E2C1;
+    padding-bottom: 15px;
+  }
+  &ItemText-all{
+    margin: 0 auto;
+    width: 80%;
+  }
+  &ItemText-low{
+    color: white;
+    width: 500px;
+    font-size: 1.4rem;
+    margin-top: 5%;
+    line-height: 28px;
+  }
+  &Link{
+    text-decoration: underline;
+    color:#50E2C1;
+    font-size: 2rem;
+    padding-left: 5%;
+  }
+  &ItemText-high{
+    color: white;
+    font-size: 1.8rem;
+  }
+  &ItemButton{
+    text-align: center;
+    margin: 50px auto 0;
+
+  }
+  &ItemAdd{
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    padding: 5px 45px;
+    font-size: 1.8rem;
+    outline: none;
+  }
+}
+.ImgVaporesso{
+  background-color: #4A4B4A;
+}
+.DescVaporesso{
+  background-color: white;
+}
+.TextVaporesso{
+  color:#000000;
+}
+.BtnVaporesso{
+  background-color: black;
+  color: white;
+}
+.TitleVaporesso{
+  color: white;
+  margin-bottom: 35px;
+}
+
+
+
+
+.novices{
+  background: black;
+  &Flex{
+    display: flex;
+  }
+  &Buy{
+    background-color: white;
+    height: 100vh;
+    width: 30%;
+  }
+  &BuyContent{
+    padding: 10% 7%;
+  }
+  &BuyPrice{
+    color: #50E2C1;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 15%;
+  }
+  &BuyText{
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 20% 0 50% 0;
+    line-height: 25px;
+  }
+  &BuyBtn-block{
+    text-align: center;
+  }
+  &BuyBtn{
+    background: none;
+    font-size: 1.5rem;
+    padding: 1% 15%;
+    border-radius: 7px;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  &BuyBtn:hover{
+    background-color: #4A4B4A;
+    color: #50E2C1;
+  }
+  &Description{
+    height: 100vh;
+    width: 70%;
+    background-color: #4A4B4A;
+  }
+  &DescriptionSpan{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+    font-weight: bold;
+  }
+  &DescriptionSpan::before{
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 8rem;
+    margin: 0 1.5rem 0 0;
+    transform: translateY(-0.5rem);
+  }
+  &DescriptionSpan::after{
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 8rem;
+    margin: 0 1rem 0 1.5rem;
+    transform: translateY(-0.5rem);
+  }
+  &DescriptionFlex{
+    display: flex;
+  }
+  &DescriptionContent{
+    padding: 8% 7% 0 7%;
+  }
+  &Img{
+    width: 300px;
+    padding: 0 46px 53px 0;
+  }
+  &DescriptionCharacteristic{
+    color: white;
+    font-size: 1.5rem;
+  }
+  &DescriptionText{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+}
+
+
+

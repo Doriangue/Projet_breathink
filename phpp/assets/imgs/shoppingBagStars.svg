@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="10px" viewBox="0 0 51 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Stars</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modal-panier" transform="translate(-751.000000, -440.000000)" fill="#FFEC00" stroke="#C4C4C4" stroke-width="0.3">
+            <g id="Modal" transform="translate(444.000000, 380.000000)">
+                <g id="Gecko-panier" transform="translate(45.000000, 42.000000)">
+                    <g id="Group-4" transform="translate(107.000000, 8.000000)">
+                        <g id="Stars" transform="translate(156.000000, 10.000000)">
+                            <polygon id="Star" points="4.5 7.46261646 1.71884705 9 2.25 5.74376941 1.66533454e-16 3.4376941 3.10942353 2.96261646 4.5 0 5.89057647 2.96261646 9 3.4376941 6.75 5.74376941 7.28115295 9"></polygon>
+                            <polygon id="Star" points="25.5 7.46261646 22.7188471 9 23.25 5.74376941 21 3.4376941 24.1094235 2.96261646 25.5 0 26.8905765 2.96261646 30 3.4376941 27.75 5.74376941 28.2811529 9"></polygon>
+                            <polygon id="Star" points="15.5 7.46261646 12.7188471 9 13.25 5.74376941 11 3.4376941 14.1094235 2.96261646 15.5 0 16.8905765 2.96261646 20 3.4376941 17.75 5.74376941 18.2811529 9"></polygon>
+                            <polygon id="Star" points="36.5 7.46261646 33.7188471 9 34.25 5.74376941 32 3.4376941 35.1094235 2.96261646 36.5 0 37.8905765 2.96261646 41 3.4376941 38.75 5.74376941 39.2811529 9"></polygon>
+                            <polygon id="Star" points="45.5 7.5 42.8549664 9.04508497 43.3601228 5.77254249 41.2202457 3.45491503 44.1774832 2.97745751 45.5 0 46.8225168 2.97745751 49.7797543 3.45491503 47.6398772 5.77254249 48.1450336 9.04508497"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
