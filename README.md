@@ -18,7 +18,7 @@ Comming soon
 
 
 
-##Our team
+## Our team
 
 * [Marie Te](https://github.com/mariete36)
 * [Eugénie Roques](https://github.com/eugenierqs)
