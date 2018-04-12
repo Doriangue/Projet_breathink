@@ -1,3 +1,21 @@
+<?php
+require_once 'connexion.php';
+session_start();
+$requete = "SELECT
+  `id`, 
+  `price`, 
+  `name`,
+  `title`
+FROM 
+  `cart`
+WHERE 
+`id`= 14
+;";
+$stmt = $conn->prepare($requete);
+$stmt->execute();
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -14,9 +32,15 @@
         <section class="novicesBuy">
             <div class="novicesBuyContent">
                 <a href="index.php"><img src="./assets/imgs/left-arrow.png" alt="fleche-vers-le-haut"></a>
-                <p class="novicesBuyPrice">Pack Avancé <br><br> 89 €</p>
-                <p class="novicesBuyText">Vous connaissez la cigarette électronique et vous voulez une vape plus intense. Fabriquer vous-même vos résistances et faire de la vapeur, découvrir le matériel reconstructible et les résistances avec câbles complexes, etc avec le pack expert.</p>
-                <div class="novicesBuyBtn-block"><button class="novicesBuyBtn" type="button" name="button">Acheter</button></div>
+                <p class="novicesBuyPrice"><?= $row['name'] ?><br><br> <?= $row['price'] ?>€</p>
+                <p class="novicesBuyText"><?= $row['title'] ?></p>
+                <div class="novicesBuyBtn-block">
+                    <form  method="post" action="do_addPanier.php">
+                        <label id="12">
+                            <input class="novicesBuyBtn" value="Acheter" type="submit" name="button">
+                        </label>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="novicesDescription">
