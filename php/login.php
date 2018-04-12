@@ -5,8 +5,7 @@ include_once 'includes/header.php';
 <section class="promo">
 
     <div class="login">
-        <img src="./assets/imgs/login.svg" alt="" class="loginImg">
-        <p class="loginText"><?=$_SESSION['prenom']?></p>
+        <p class="loginText">hi, <?=$_SESSION['prenom']?></p>
     </div>
 
     <div class="modalLogin">

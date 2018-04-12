@@ -5,11 +5,6 @@ include_once 'includes/header.php';
 
 <section class="promo">
 
-    <div class="login">
-        <img src="./assets/imgs/login.svg" alt="" class="loginImg">
-        <p class="loginText">Login</p>
-    </div>
-
     <div class="modalLogin">
         <div class="modalLogin-contentLeft">
             <div class="loginBtn"><a href="register.php">S’inscrire</a></div>

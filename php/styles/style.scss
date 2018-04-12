@@ -46,49 +46,25 @@ a{
     .navShoppingBag{
       cursor: pointer;
     }
-    .navBurgerMenu{
-      cursor: pointer;
-      width: 13.4%;
-      background: #4A4B4A;
-      height: 223px;
-      flex-direction: column;
-      overflow: auto;
-      display: flex;
-      text-align: center;
-      padding-top: 50px;
-    }
-    .navBurgerLine{
-      padding: 62px 0 45px 0;
-      height: 100%;
-      width: 60%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-around;
-      &-item{
-        height: 100%;
-        width: 1px;
-        background: #fff;
 
-      }
-      .middle{
-        height: 80%;
-        transition: 0.2s ease;
-      }
-    }
-    .navBurgerLine:hover{
-      .middle{
-        height: 100%;
-      }
-    }
-    .navBurgerText{
-      font-size: 2rem;
-      color: #fff;
-      padding-bottom: 32px;
-    }
+
   }
 }
 
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  cursor: pointer ;
+}
 
+.loginText{
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #9B9B9B;
+
+}
 
 
 .modalShoppingBag{
@@ -188,31 +164,10 @@ a{
 }
 
 
-
-
-
-
-
-
-
-
 .promo{
   width: 83%;
   margin: 0 auto;
   padding: 53px 0 0;
-  .login{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 8%;
-    cursor: pointer ;
-  }
-  .loginText{
-    font-size: 2.1rem;
-    font-weight: 300;
-    color: #9B9B9B;
-
-  }
 }
 
 .articleContainer{

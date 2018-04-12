@@ -19,21 +19,9 @@ $stmt = $conn->prepare($requete);
 $stmt->execute();
 ?>
 
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-
-<body>
 
 
-  <div class="login">
-      <img src="../login.14dcaedb.svg" alt="" class="loginImg">
-      <p class="loginText"><?=$_SESSION['prenom']?></p>
-  </div>
+
 
   <div class="modalLogin">
       <div class="modalLogin-contentLeft">
@@ -42,7 +30,7 @@ $stmt->execute();
       <div class="modalLogin-contentRight">
           <div class="headTitleRight">
 
-              <img src="../cross.dc805c73.svg" alt="" class="crossImg">
+              <img src="./assets/imgs/cross.svg" alt="" class="crossImg">
           </div>
 
           <form action="deconnexion.php" class="headFormRight" method="post">
@@ -54,12 +42,17 @@ $stmt->execute();
 
   </div>
 
+  <section class="modelisation">
+      <div class="modelisationTitle">personnalisation</div>
+      <div class="modelisationContainer"></div>
+  </section>
+
     <form action="do_addComment.php" class="add" method="post">
       <div class="add-container">
           <textarea placeholder="Ajoutez un commentaire" name="comment"></textarea>
-          <button type="submit">Ajouter</button>
-      </div>
-    </form>
+  <button type="submit">Ajouter</button>
+  </div>
+  </form>
 
     <section class="clients">
 
@@ -78,5 +71,5 @@ $stmt->execute();
 </html>
 
 <?php
-include 'includes/footer.php'
+    include 'includes/footer.php'
 ?>

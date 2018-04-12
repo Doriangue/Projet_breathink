@@ -1,6 +1,6 @@
 const login = document.querySelector('.login');
 const modal = document.querySelector('.modalLogin');
-const close = document.querySelector('.crossImg');
+const close = document.querySelector('.headTitleRight .crossImg');
 
 login.addEventListener('click',function(){
     modal.style.display = 'flex';
